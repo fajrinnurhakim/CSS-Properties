@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 0.2rem solid red;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#middle {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 0.2rem solid blue;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#static #middle {
+    position: static;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 248px;
+
+}
+
+#absolute #middle {
+    position: absolute;
+    left: 200px;
+}
+
+#fixed #middle {
+    position: fixed;
+    left: 50;
+    top: 0;
+}
